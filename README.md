@@ -75,4 +75,4 @@ Follow these instructions to set up and run Bizly on your local machine.
 2.  Using Postman or any REST CLIENT access the API at `http://localhost:$PORT`
 
 ### API Documentation
-for detailed API Documentation please refer to the [API Documentaion](#https://github.com/cgrade/Bizly/tree/main/bizly-backend#bizly-app-api-documentation)
+for detailed API Documentation please refer to the [API Documentaion](https://github.com/cgrade/Bizly/tree/main/bizly-backend#bizly-app-api-documentation)
