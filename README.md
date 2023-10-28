@@ -76,3 +76,6 @@ Follow these instructions to set up and run Bizly on your local machine.
 
 ### API Documentation
 for detailed API Documentation please refer to the [API Documentaion](https://github.com/cgrade/Bizly/tree/main/bizly-backend#bizly-app-api-documentation)
+
+### Contributors
+As at this writing The bizly app was built by Abraham Elijah

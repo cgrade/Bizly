@@ -41,8 +41,9 @@ In case of errors, the API will respond with appropriate status codes and error 
   "name": "My Business",
   "typeOfBusiness": "Fashion"
 }
+```
 
-Response (201 Created):
+**Response:**
 
 ```json
 {
@@ -55,3 +56,4 @@ Response (201 Created):
   "date_created": "2023-10-24T03:03:31.597Z",
   "__v": 6
 }
+```
