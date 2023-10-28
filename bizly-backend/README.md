@@ -57,3 +57,42 @@ In case of errors, the API will respond with appropriate status codes and error 
   "__v": 6
 }
 ```
+
+#### List All Businesses for a User
+
+- `GET /api/business/businesses`
+
+**Request:**
+
+```json
+{
+
+}
+```
+
+**Response:**
+
+```json
+[
+{
+  "_id": "653735cf05ca20dc15627603",
+  "name": "My Business",
+  "typeOfBusiness": "Fashion",
+  "incomePercentage": 25,
+  "expenses": [],
+  "income": [],
+  "date_created": "2023-10-24T03:03:31.597Z",
+  "__v": 6
+},
+{
+  "_id": "653735cf05ca20dc15627603",
+  "name": "My Business",
+  "typeOfBusiness": "Fashion",
+  "incomePercentage": 25,
+  "expenses": [],
+  "income": [],
+  "date_created": "2023-10-24T03:03:31.597Z",
+  "__v": 6
+}
+]
+```
