@@ -96,3 +96,63 @@ In case of errors, the API will respond with appropriate status codes and error 
 }
 ]
 ```
+
+### Income
+
+#### Record an Income for a particular business
+
+- `POST /api/income/:businessId/record`
+
+**Request:**
+
+```json
+{
+  "amount": 30000,
+  "source": "Business Sales"
+}
+```
+
+**Response:**
+
+```json
+{
+  "amount": 30000,
+  "date_created": "2023-10-24T03:03:31.603Z",
+  "businessId": "653735cf05ca20dc15627603",
+  "source": "Business Sales",
+  "__v": 0
+}
+```
+
+#### List All income for a Business
+
+- `GET /api/income/:businessId/incomes`
+
+**Request:**
+
+```json
+{
+
+}
+```
+
+**Response:**
+
+```json
+[
+{
+  "amount": 30000,
+  "date_created": "2023-10-24T03:03:31.603Z",
+  "businessId": "653735cf05ca20dc15627603",
+  "source": "Business Sales",
+  "__v": 0
+},
+{
+  "amount": 40000,
+  "date_created": "2023-10-24T03:03:31.603Z",
+  "businessId": "653735cf05ca20dc15627603",
+  "source": "MakeUp",
+  "__v": 0
+}
+]
+```
