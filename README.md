@@ -35,15 +35,10 @@ Bizly is a business management application that simplifies financial record-keep
   - Generate financial reports for different time intervals (daily, weekly, monthly, yearly).
   - Access income, expenses, profit/loss, and self-payment data.
 
-- **User-Friendly Interface:**
-  - A user-friendly web interface built with Vue.js for effortless interaction.
 
 ## Demo
 
-[View Demo](https://bizlyapp.com/demo)
-
-![Bizly App Demo](demo-screenshot.png)
-
+Demo will be added as soon as front end is built
 ## Getting Started
 
 Follow these instructions to set up and run Bizly on your local machine.
@@ -59,3 +54,25 @@ Follow these instructions to set up and run Bizly on your local machine.
 
    ```sh
    git clone https://github.com/yourusername/bizly-app.git
+
+2. Navigate to the bizly-backend directory:
+
+   ```sh
+   cd bizly-backend
+
+3. Install Server Dependencies:
+
+   ```sh
+   sudo npm install
+
+### Usage
+
+1. Start the server with Nodemon from the bizly-backend directory:
+
+    ```sh
+    nodemon app.js
+
+2.  Using Postman or any REST CLIENT access the API at `http://localhost:$PORT`
+
+### API Documentation
+for detailed API Documentation please refer to the [API Documentaion](#https://github.com/cgrade/Bizly/tree/main/bizly-backend#bizly-app-api-documentation)
