@@ -19,6 +19,7 @@ const businessRouter = require('./routes/business');
 const incomeRouter = require('./routes/income');
 const expenseRouter = require('./routes/expense');
 const reportRouter = require('./routes/report');
+const home = require('./routes/home');
 
 
 // Initialize the Express app.
@@ -54,6 +55,7 @@ app.use('/api/income', incomeRouter);
 app.use('/api/expense', expenseRouter);
 app.use('/api/report/', reportRouter);
 app.use('/api/report', reportRouter);
+app.use('/', home);
 
 
 
