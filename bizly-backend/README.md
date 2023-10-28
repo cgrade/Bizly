@@ -28,7 +28,7 @@ In case of errors, the API will respond with appropriate status codes and error 
 
 ## Endpoints
 
-### Business
+### 1. Business
 
 #### Create a Business
 
@@ -97,7 +97,7 @@ In case of errors, the API will respond with appropriate status codes and error 
 ]
 ```
 
-### Income
+### 2. Income
 
 #### Record an Income for a particular business
 
@@ -152,6 +152,66 @@ In case of errors, the API will respond with appropriate status codes and error 
   "date_created": "2023-10-24T03:03:31.603Z",
   "businessId": "653735cf05ca20dc15627603",
   "source": "MakeUp",
+  "__v": 0
+}
+]
+```
+
+### 3. Expenses
+
+#### Record an Expense for a particular business
+
+- `POST /api/expense/:businessId/record`
+
+**Request:**
+
+```json
+{
+  "amount": 30000,
+  "typeOfExpense": "Rent"
+}
+```
+
+**Response:**
+
+```json
+{
+  "amount": 30000,
+  "date_created": "2023-10-24T03:03:31.603Z",
+  "businessId": "653735cf05ca20dc15627603",
+  "typeOfExpense": "Rent",
+  "__v": 0
+}
+```
+
+#### List All income for a Business
+
+- `GET /api/expense/:businessId/expenses`
+
+**Request:**
+
+```json
+{
+
+}
+```
+
+**Response:**
+
+```json
+[
+{
+  "amount": 30000,
+  "date_created": "2023-10-24T03:03:31.603Z",
+  "businessId": "653735cf05ca20dc15627603",
+  "typeOfExpense": "Rent",
+  "__v": 0
+},
+{
+  "amount": 40000,
+  "date_created": "2023-10-24T03:03:31.603Z",
+  "businessId": "653735cf05ca20dc15627603",
+  "typeOfExpense": "Overhead and Electricity",
   "__v": 0
 }
 ]
